@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		6CDE515E1CFC8F4600BD999F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDE515D1CFC8F4600BD999F /* AppDelegate.swift */; };
-		6CDE51601CFC8F4600BD999F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDE515F1CFC8F4600BD999F /* ViewController.swift */; };
 		6CDE51631CFC8F4600BD999F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CDE51611CFC8F4600BD999F /* Main.storyboard */; };
 		6CDE51651CFC8F4600BD999F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CDE51641CFC8F4600BD999F /* Assets.xcassets */; };
 		6CDE51681CFC8F4600BD999F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CDE51661CFC8F4600BD999F /* LaunchScreen.storyboard */; };
+		6CDE51701CFC922000BD999F /* ListifyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDE516F1CFC922000BD999F /* ListifyTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6CDE515A1CFC8F4600BD999F /* ListifySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListifySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CDE515D1CFC8F4600BD999F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6CDE515F1CFC8F4600BD999F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6CDE51621CFC8F4600BD999F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6CDE51641CFC8F4600BD999F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CDE51671CFC8F4600BD999F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CDE51691CFC8F4600BD999F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CDE516F1CFC922000BD999F /* ListifyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListifyTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				6CDE515D1CFC8F4600BD999F /* AppDelegate.swift */,
-				6CDE515F1CFC8F4600BD999F /* ViewController.swift */,
 				6CDE51611CFC8F4600BD999F /* Main.storyboard */,
 				6CDE51641CFC8F4600BD999F /* Assets.xcassets */,
 				6CDE51661CFC8F4600BD999F /* LaunchScreen.storyboard */,
 				6CDE51691CFC8F4600BD999F /* Info.plist */,
+				6CDE516F1CFC922000BD999F /* ListifyTableViewController.swift */,
 			);
 			path = ListifySwift;
 			sourceTree = "<group>";
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CDE51601CFC8F4600BD999F /* ViewController.swift in Sources */,
+				6CDE51701CFC922000BD999F /* ListifyTableViewController.swift in Sources */,
 				6CDE515E1CFC8F4600BD999F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
