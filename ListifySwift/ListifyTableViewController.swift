@@ -10,6 +10,8 @@ import UIKit
 
 class ListifyTableViewController: UITableViewController {
 
+    var items = [ "First Item", "Second Item", "Third Item" ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,11 +20,18 @@ class ListifyTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: #selector(ListifyTableViewController.addItemHandler(_:)))
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func addItemHandler(sender: AnyObject) {
+        items.append("Item \(arc4random() % 100)")
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -32,15 +41,19 @@ class ListifyTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return items.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
 
-        cell.textLabel?.text = "Hello World"
+        cell.textLabel?.text = items[indexPath.item]
 
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("Did select: \(items[indexPath.item])")
     }
 
     /*
